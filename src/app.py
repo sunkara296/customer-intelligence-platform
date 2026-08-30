@@ -1,9 +1,9 @@
-from customer import Customer
+from data_loader import load_customer_data
 
-customer1 = Customer(
-    customer_id=101,
-    total_orders=5,
-    total_spend=1000
-)
+from feature import add_average_order_value
 
-print(customer1.average_order_value())
+df = load_customer_data("src/data/customers.csv")
+
+df = add_average_order_value(df)
+
+print(df)
