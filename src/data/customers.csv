@@ -1,6 +1,6 @@
-customer_id,total_orders,total_spend
-101,5,1000
-102,10,3500
-103,2,300
-104,0,0
-105,8,2400
+customer_id,customer_name,signup_date
+101,Alice,2025-01-15
+102,Bob,2025-02-20
+103,Charlie,2025-03-10
+104,David,2025-04-05
+105,Emma,2025-05-18
