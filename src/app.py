@@ -1,9 +1,13 @@
-from data_loader import load_customer_data
+from data_loader import load_data
+from feature import build_customer_features
 
-from feature import add_average_order_value
+customers_df = load_data("src/data/customers.csv")
+orders_df = load_data("src/data/orders.csv")
 
-df = load_customer_data("src/data/customers.csv")
+customer_features_df = build_customer_features(
+    customers_df,
+    orders_df,
+    '2026-07-01'
+)
 
-df = add_average_order_value(df)
-
-print(df)
+print(customer_features_df)
