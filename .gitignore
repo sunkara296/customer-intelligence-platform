@@ -4,3 +4,8 @@ __pycache__/
 
 models/*.joblib
 models/evaluation.json
+
+# Testing artifacts
+.pytest_cache/
+.coverage
+htmlcov/
