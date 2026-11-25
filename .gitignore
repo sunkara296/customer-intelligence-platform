@@ -9,3 +9,9 @@ models/evaluation.json
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+.aws/
